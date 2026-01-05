@@ -9,6 +9,7 @@ load_dotenv()
 # Initialize Google Search Agent with Groq Model
 google_search_agent = Agent(
     tools=[GoogleSearch()],
+
     description="You are a news agent that helps users find the latest news.",
     instructions=[
         "Given a topic by the user, respond with 4 latest news items about that topic.",
